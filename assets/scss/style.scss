@@ -1,0 +1,90 @@
+@import "./variables.scss";
+
+body{
+    color: $bg;
+}
+
+img{
+    max-width: 100%;
+    &.half-img{
+        width: 40%;
+    }
+}
+
+.section{
+    background-color:$bg;
+    &.dark{
+        background-color: $gray;
+    }
+    .pp-tableCell{
+        vertical-align: top;
+    }
+}
+
+.clip{
+    background-color: $gray;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 20%;
+    &.right{
+        clip-path: polygon(0 100%, 0 70%, 59% 68%, 71% 0, 100% 0, 100% 100%);
+        text-align: right;
+        .section-description{
+            padding-right: 50px;
+        }
+    }
+    &.left{
+        clip-path: polygon(0 100%, 0 0, 34% 0, 45% 64%, 100% 63%, 100% 100%);
+        .section-description{
+            padding-left: 50px;
+        }
+    }
+}
+.section.landing{
+    .logo{
+        max-width: 250px;
+        width: 100%;
+        margin: 3rem auto;
+        display: block;
+    }
+    .main-info{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        p{
+            font-size: $l;
+            text-align: center;
+            width: 100%;
+        }
+        .scroll-down{
+            display: flex;
+            align-items: center;
+            img{
+                height: 64px;
+                position: relative;
+                animation: upndown 5s infinite;
+            }
+            span{
+                font-size: $l;
+                font-weight: bold;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+@keyframes upndown {
+    0%{
+        top: 0px
+    }
+    9%{
+        top: 10px;
+    };
+    10%{
+        top: 0px
+    };
+    100%{
+        top: 0px
+    }
+}
