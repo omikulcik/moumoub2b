@@ -8,9 +8,18 @@ img {
 img.half-img {
   width: 40%;
 }
+img.vh100 {
+  height: 81vh;
+  align-self: flex-start;
+}
 
 .section {
   background-color: #f7f7f7;
+}
+.section.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .section.dark {
   background-color: #4c4d4f;

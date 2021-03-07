@@ -9,9 +9,18 @@ img{
     &.half-img{
         width: 40%;
     }
+    &.vh100{
+        height: 81vh;
+        align-self: flex-start;
+    }
 }
 
 .section{
+    &.flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     background-color:$bg;
     &.dark{
         background-color: $gray;
