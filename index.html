@@ -34,9 +34,11 @@
                 </div>
             </div>
         </div>
-        <div class="section flex">
-            <img src="assets/img/colors.jpg" class="half-img" />
-            <img src="assets/img/colors2.jpg" class="half-img vh100" />
+        <div class="section">
+            <div class="sections-imgs right">
+                <img src="assets/img/Colours-green.png" class="whole" />
+                <img src="assets/img/Colours-detail.png" class="sleeve" />
+            </div>
             <div class="clip right">
                 <div class="section-description">
                     <h1>Colours of Ostrava</h1>
@@ -82,6 +84,10 @@
             </div>
         </div>
         <div class="section ">
+            <div class="sections-imgs right">
+                <img src="assets/img/Adolfeen-1.png" class="whole" />
+                <img src="assets/img/Adolfeen-2.png" class="sleeve" />
+            </div>
             <div class="clip right">
                 <div class="section-description">
                     <h1>Adolfeen</h1>
@@ -93,6 +99,10 @@
             </div>
         </div>
         <div class="section">
+            <div class="sections-imgs left">
+                <img src="assets/img/Vítek-detail.png" class="sleeve" />
+                <img src="assets/img/Vítek-1.png" class="whole" />
+            </div>
             <div class="clip left">
                 <div class="section-description">
                     <h1>Vítkův Cestopis</h1>
@@ -103,7 +113,24 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section folk">
+            <div class="top-clip">
+                ...i folklorní soubory
+            </div>
+            <div class="muz-desc">
+                <h2>Muzička</h2>
+                <p>
+                    Folklorní soubor s tradicí z Čech
+                </p>
+            </div>
+            <div class="mik-desc">
+                <h2>Míkovjan</h2>
+                <p>
+                    Folklorní soubor ze srdce Slovácka
+                </p>
+            </div>
+            <img id="muzicka-img" src="assets/img/Muzička.png" />
+            <img id="mikovjan-img" src="assets/img/Míkovjan.png" />
             Clear
         </div>
         <div class="section dark">
@@ -112,11 +139,32 @@
         <div class="section dark">
 
         </div>
-        <div class="section ">
-            Clip top
+        <div class="section etikety ">
+            <div class="top-clip">
+                MŮŽEME VYTVOŘIT ETIKETY <br />
+                NEBO KRABIČKY NA MÍRU!
+            </div>
+            <img id="eimg" src="assets/img/etikety.png" />
         </div>
-        <div class="section dark">
-
+        <div class="section dark contact">
+            <div class="info-cont">
+                <p class="cta">
+                    Zajímá Vás cokoliv ohledně<br />
+                    vlastní výroby?<br />
+                    Neváhejte mne kontaktovat.
+                </p>
+                <div class="contact-details">
+                    <span class="name">Jan Momčil</span>
+                    <span class="mailtel">
+                        Tel: <a href="tel:773 599 633">773 599 633</a>
+                    </span>
+                    <span class="mailtel">
+                        E-mail: <a href="mailto:jan.momcil@gmail.com">jan.momcil@gmail.com</a>
+                    </span>
+                </div>
+                <a class="b2c-link" href="https://www.moumou.cz/" target="_blank">www.moumou.cz</a>
+                <img src="assets/img/logo.png" id="btm-logo" />
+            </div>
         </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -129,7 +177,7 @@
             easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
             // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
             animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-            pagination: false,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+            pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
             updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
             // This option accepts a callback function. The function will be called after the page moves.
             loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.

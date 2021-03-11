@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "dejavu_sanscondensed";
+  src: url("../fonts/DejaVuSansCondensed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dejavu_sanscondensed";
+  src: url("../fonts/DejaVuSansCondensed-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
 body {
   color: #f7f7f7;
+  font-family: "dejavu_sanscondensed";
 }
 
 img {
@@ -16,16 +29,30 @@ img.vh100 {
 .section {
   background-color: #f7f7f7;
 }
-.section.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 .section.dark {
   background-color: #4c4d4f;
 }
-.section .pp-tableCell {
-  vertical-align: top;
+.section .sections-imgs {
+  display: flex;
+  height: 80%;
+}
+.section .sections-imgs.right .whole {
+  margin-left: auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.section .sections-imgs.right .sleeve {
+  margin-left: auto;
+  max-width: 40%;
+}
+.section .sections-imgs.left .whole {
+  margin-right: auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.section .sections-imgs.left .sleeve {
+  margin-right: auto;
+  max-width: 40%;
 }
 
 .clip {
@@ -36,14 +63,14 @@ img.vh100 {
   height: 20%;
 }
 .clip.right {
-  clip-path: polygon(0 100%, 0 70%, 59% 68%, 71% 0, 100% 0, 100% 100%);
   text-align: right;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 53%);
 }
 .clip.right .section-description {
   padding-right: 50px;
 }
 .clip.left {
-  clip-path: polygon(0 100%, 0 0, 34% 0, 45% 64%, 100% 63%, 100% 100%);
+  clip-path: polygon(90% 0, 100% 53%, 100% 100%, 0 100%, 0 0);
 }
 .clip.left .section-description {
   padding-left: 50px;
@@ -93,6 +120,110 @@ img.vh100 {
   100% {
     top: 0px;
   }
+}
+.top-clip {
+  height: 15%;
+  background-color: #4c4d4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+.folk {
+  position: relative;
+}
+.folk .muz-desc {
+  text-align: right;
+  margin-right: 5%;
+  padding-top: 4%;
+}
+.folk .muz-desc h2, .folk .mik-desc h2 {
+  font-size: 36px;
+  color: #4c4d4f;
+  margin-bottom: 0;
+}
+.folk .muz-desc p, .folk .mik-desc p {
+  margin-top: 1rem;
+  font-size: 28px;
+  color: #4c4d4f;
+}
+.folk .mik-desc {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.folk #muzicka-img {
+  position: absolute;
+  max-width: 33%;
+  top: 17%;
+}
+.folk #mikovjan-img {
+  position: absolute;
+  max-width: 33%;
+  right: 0;
+  bottom: 0;
+}
+
+.etikety .top-clip {
+  height: 20%;
+}
+
+#eimg {
+  height: 65%;
+  display: block;
+  margin: 5% auto;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .cta {
+  font-size: 36px;
+  text-align: center;
+}
+.contact .contact-details {
+  text-align: center;
+}
+.contact .contact-details .name {
+  font-size: 36px;
+  display: block;
+}
+.contact .contact-details span {
+  margin-top: 1rem;
+}
+.contact .contact-details .mailtel {
+  display: block;
+  font-size: 28px;
+}
+.contact .contact-details .mailtel a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+.contact .contact-details .mailtel a :hover {
+  text-decoration: none;
+}
+.contact .b2c-link {
+  color: #4c4d4f;
+  margin-top: 2rem;
+  display: block;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 1rem;
+  font-size: 36px;
+  text-decoration: none;
+}
+.contact .b2c-link :hover {
+  text-decoration: none;
+}
+.contact #btm-logo {
+  max-width: 200px;
+  display: block;
+  margin: 2rem auto 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

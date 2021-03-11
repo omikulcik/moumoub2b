@@ -1,7 +1,25 @@
 @import "./variables.scss";
 
+@font-face {
+    font-family: 'dejavu_sanscondensed';
+    src: url('../fonts/DejaVuSansCondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dejavu_sanscondensed';
+    src: url('../fonts/DejaVuSansCondensed-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
 body{
     color: $bg;
+    font-family: "dejavu_sanscondensed";
 }
 
 img{
@@ -16,17 +34,35 @@ img{
 }
 
 .section{
-    &.flex{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
     background-color:$bg;
     &.dark{
         background-color: $gray;
     }
-    .pp-tableCell{
-        vertical-align: top;
+    .sections-imgs{
+        display: flex;
+        height: 80%;
+        &.right{
+            .whole{
+                margin-left: auto;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+            }
+            .sleeve{
+                margin-left: auto;
+                max-width: 40%;
+            }
+        }
+        &.left{
+            .whole{
+                margin-right: auto;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+            }
+            .sleeve{
+                margin-right: auto;
+                max-width: 40%;
+            }
+        }
     }
 }
 
@@ -36,15 +72,16 @@ img{
     width: 100%;
     bottom: 0;
     height: 20%;
+
     &.right{
-        clip-path: polygon(0 100%, 0 70%, 59% 68%, 71% 0, 100% 0, 100% 100%);
         text-align: right;
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 53%);
         .section-description{
             padding-right: 50px;
         }
     }
     &.left{
-        clip-path: polygon(0 100%, 0 0, 34% 0, 45% 64%, 100% 63%, 100% 100%);
+        clip-path: polygon(90% 0, 100% 53%, 100% 100%, 0 100%, 0 0);
         .section-description{
             padding-left: 50px;
         }
@@ -95,5 +132,116 @@ img{
     };
     100%{
         top: 0px
+    }
+}
+
+.top-clip{
+    height: 15%;
+    background-color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: $l;
+    text-align: center;
+}
+
+.folk{
+    position: relative;
+    .muz-desc{
+        text-align: right;
+        margin-right: 5%;
+        padding-top: 4%;
+    }
+    .muz-desc, .mik-desc{
+        h2{
+            font-size: $l;
+            color: $gray;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 1rem;
+            font-size: $m;
+            color: $gray;
+        }
+    }
+
+    .mik-desc{
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+    #muzicka-img{
+        position: absolute;
+        max-width: 33%;
+        top: 17%
+    }
+    #mikovjan-img{
+        position: absolute;
+        max-width: 33%;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.etikety{
+    .top-clip{
+        height: 20%;
+    }
+}
+
+#eimg{
+    height: 65%;
+    display: block;
+    margin: 5% auto;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cta{
+        font-size: $l;
+        text-align: center;
+    }
+    .contact-details{
+        text-align: center ;
+        .name{
+            font-size: $l;
+            display: block;
+        }
+        span{
+            margin-top: 1rem;
+        }
+        .mailtel{
+            display: block;
+            font-size: $m;
+
+            a{
+                color: $bg;
+                text-decoration: none;
+                :hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .b2c-link{
+        color: $gray;
+        margin-top: 2rem;
+        display: block;
+        background-color: $bg;
+        text-align: center;
+        padding: 1rem;
+        font-size: $l;
+        text-decoration: none;
+        :hover{
+            text-decoration: none;
+        }
+    }
+    #btm-logo{
+        max-width: 200px;
+        display: block;
+        margin: 2rem auto 0 auto;
     }
 }
