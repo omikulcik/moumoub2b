@@ -32,27 +32,25 @@ img.vh100 {
 .section.dark {
   background-color: #4c4d4f;
 }
+.section h1 {
+  font-size: 38px;
+}
 .section .sections-imgs {
   display: flex;
   height: 80%;
 }
-.section .sections-imgs.right .whole {
-  margin-left: auto;
+.section .sections-imgs .sleeve {
+  max-width: 50%;
+}
+.section .sections-imgs .whole, .section .sections-imgs .sleeve {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
 }
-.section .sections-imgs.right .sleeve {
+.section .sections-imgs.right .whole, .section .sections-imgs.right .sleeve {
   margin-left: auto;
-  max-width: 40%;
 }
-.section .sections-imgs.left .whole {
+.section .sections-imgs.left .whole, .section .sections-imgs.left .sleeve {
   margin-right: auto;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-}
-.section .sections-imgs.left .sleeve {
-  margin-right: auto;
-  max-width: 40%;
 }
 
 .clip {
@@ -61,6 +59,13 @@ img.vh100 {
   width: 100%;
   bottom: 0;
   height: 20%;
+}
+.clip p {
+  margin-top: 0;
+  font-size: 21px;
+}
+.clip h1 {
+  margin-bottom: 10px;
 }
 .clip.right {
   text-align: right;
@@ -88,7 +93,7 @@ img.vh100 {
   flex-wrap: wrap;
 }
 .section.landing .main-info p {
-  font-size: 36px;
+  font-size: 38px;
   text-align: center;
   width: 100%;
 }
@@ -102,7 +107,7 @@ img.vh100 {
   animation: upndown 5s infinite;
 }
 .section.landing .main-info .scroll-down span {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: bold;
   margin: 0 1rem;
 }
@@ -128,7 +133,7 @@ img.vh100 {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 38px;
   text-align: center;
 }
 
@@ -141,7 +146,7 @@ img.vh100 {
   padding-top: 4%;
 }
 .folk .muz-desc h2, .folk .mik-desc h2 {
-  font-size: 36px;
+  font-size: 38px;
   color: #4c4d4f;
   margin-bottom: 0;
 }
@@ -183,14 +188,14 @@ img.vh100 {
   justify-content: center;
 }
 .contact .cta {
-  font-size: 36px;
+  font-size: 38px;
   text-align: center;
 }
 .contact .contact-details {
   text-align: center;
 }
 .contact .contact-details .name {
-  font-size: 36px;
+  font-size: 38px;
   display: block;
 }
 .contact .contact-details span {
@@ -214,7 +219,7 @@ img.vh100 {
   background-color: #f7f7f7;
   text-align: center;
   padding: 1rem;
-  font-size: 36px;
+  font-size: 38px;
   text-decoration: none;
 }
 .contact .b2c-link :hover {
