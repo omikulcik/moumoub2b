@@ -231,4 +231,24 @@ img.vh100 {
   margin: 2rem auto 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .sleeve {
+    display: none;
+  }
+
+  .whole {
+    max-width: 80%;
+    margin: 0 !important;
+  }
+
+  .section .sections-imgs {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clip.right, .clip.left {
+    clip-path: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
