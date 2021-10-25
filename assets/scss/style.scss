@@ -37,6 +37,29 @@ img{
     background-color:$bg;
     &.dark{
         background-color: $gray;
+        text-align: center;
+        h2{
+            font-size: $l;
+        }
+        p{
+            font-size: $m;
+        }
+        .explainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3%;
+            &.left{
+                img{
+                    margin-left: 5%;
+                }
+            }
+            &.right{
+                img{
+                    margin-right: 5%;
+                }
+            }
+        }
     }
     h1{
         font-size: $l;
@@ -252,6 +275,13 @@ img{
 }
 
 @media screen and (max-width: 768px) {
+    .section.dark .explainer{
+        margin-top: 4%;
+        padding: 0 2%;
+    }
+    html{
+        font-size: 12px;
+    }
     .sleeve{
         display: none;
     }
@@ -266,4 +296,15 @@ img{
     .clip.right, .clip.left{
         clip-path: none;
     }
+    .folk{
+        #muzicka-img, #mikovjan-img{
+        max-width: 50%;
+    }
+    .muz-desc{
+        padding-top: 30%;
+    }
+    .mik-desc{
+        bottom: 20%;
+    }
+}
 }
